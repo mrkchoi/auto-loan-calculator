@@ -1,0 +1,36 @@
+.input {
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-body {
+    align-items: center;
+}
+
+.output-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #848484;
+}
+
+.output-monthly {
+    display: flex;
+    justify-content: space-between;
+}
+
+.output-monthly__title {
+    font-weight: 600;
+}
+
+.output-monthly p {
+    margin-bottom: 0;
+    color: #000;
+}
+
+.output-monthly__value {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+

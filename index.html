@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Simple Auto Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-6 offset-md-3 p-4">
+            <div class="title text-center">
+                <h1 class="title--main">Simple Auto Loan Calculator</h1>
+                <p class="title--info">By Kenny Choi</p>
+            </div>
+
+            <div class="input mb-4">
+                <form>
+                    <label for="loan-amount">Loan Amount</label>
+                    <input  type="text"
+                            id="loan-amount"
+                            class="form-control mb-4"
+                            placeholder="Enter loan amount...">
+
+                    <label for="interest-rate">Interest Rate (%)</label>
+                    <input  type="text"
+                            id="interest-rate"
+                            class="form-control mb-4"
+                            placeholder="Enter Interest Rate (%)">
+
+                    <label for="loan-period">Loan Period (months)</label>
+                    <input  type="text"
+                            id="loan-period"
+                            class="form-control mb-4"
+                            placeholder="Enter Loan Period (months)">
+                </form>
+            </div>
+
+            <div class="output card">
+                <div class="card-body">
+                    <div class="output-total">
+                        <p>Total cost of car loan</p>
+                        <p class="output-total__value"></p>
+                    </div>
+                    <div class="output-monthly">
+                        <p class="output-monthly__title">Monthly Payments</p>
+                        <p class="output-monthly__value"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS Script -->
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
